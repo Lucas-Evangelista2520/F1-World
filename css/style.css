@@ -639,7 +639,7 @@ td {
     .detalle span:last-child {
         display: none;
     }
-    
+
 }
 
 
@@ -650,6 +650,7 @@ td {
     .title {
         font-size: 20px;
         height: auto;
+        padding: 10px 10px 10px 5px;
     }
 
     .title h2 {
