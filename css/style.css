@@ -635,6 +635,11 @@ td {
     .detalle span:first-child {
         display: none;
     }
+
+    .detalle span:last-child {
+        display: none;
+    }
+    
 }
 
 
