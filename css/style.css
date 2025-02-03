@@ -187,6 +187,7 @@ footer section p {
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: auto auto; 
     grid-row-gap: 40px;
+    grid-column-gap: 20px;
     justify-items: center;
     justify-self: center;
 }
@@ -223,6 +224,10 @@ footer section p {
     justify-content: center;
     display: block; 
     margin: 0 auto; 
+    align-self: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #41414175;
 }
 
 .stat-constructores,
@@ -238,7 +243,7 @@ footer section p {
 }
 
 .stats-grid article {
-    background-color: #4141412e;
+    background-color: #41414175;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -340,11 +345,12 @@ table {
     color: white;
     font-size: 20px;
     table-layout: fixed;
-    border-collapse: collapse;
+    border-collapse: separate;
     background-color: rgba(65, 65, 65, 0.5);
     margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 10px;
+    border: 4px solid rgba(0, 0, 0, 0.9); 
 }
 
 th {
@@ -369,7 +375,7 @@ td:last-child {
 .conteiner-resultados {
     display: flex; 
     grid-template-columns: 1fr 1fr; 
-    gap: 18px; 
+    gap: 10px; 
     justify-content: center;
     flex-direction: row;
     padding: 20px;
@@ -524,6 +530,7 @@ td:last-child {
         grid-template-columns: 1fr 1fr; 
         grid-template-rows: auto auto auto auto auto auto; 
         grid-row-gap: 20px;
+        grid-column-gap: 0px;
         width: 100%;
         justify-items: center;
     }
@@ -694,11 +701,11 @@ td:last-child {
         display: none;
     }
 
-     /*EQUIPOS*/
+    /*EQUIPOS*/
 
     /*Tamaño font*/
     
-     body {
+    body {
         font-size: 14px; 
     }
 
@@ -839,6 +846,7 @@ td:last-child {
         font-size: 10px;
         margin-top: 5px;
         margin-bottom: 5px;
+        border: 2px solid rgba(0, 0, 0, 0.9);
     }
     
     th {
@@ -939,7 +947,7 @@ td:last-child {
 
     .piloto-1, .piloto-2 {
         min-height: 100px; 
-        min-width: 130px;
+        min-width: 140px;
     }
 
 } 
@@ -980,8 +988,13 @@ td:last-child {
     /* EQUIPOS */
 
     .stat-constructores, .stat-pilotos, .victorias-equipo {
-        min-height: 100px;
+        min-height: 80px;
         min-width: auto; 
+    }
+
+    .piloto-1, .piloto-2 {
+        min-height: 80px; 
+        min-width: 125px;
     }
 
 
