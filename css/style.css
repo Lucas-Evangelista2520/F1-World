@@ -186,9 +186,9 @@ footer section p {
         "piloto1 imagen piloto2";
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: auto auto; 
-    gap: 10px;
     grid-row-gap: 40px;
     justify-items: center;
+    justify-self: center;
 }
 
 
@@ -517,7 +517,56 @@ td:last-child {
         min-width: 120px;
     }
 
+    /*EQUIPOS*/
+
+    .stats-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto auto auto auto auto auto; 
+        grid-row-gap: 20px;
+        width: 100%;
+        justify-items: center;
+    }
+
+    /* Ubico los pilotos juntos */
+    .piloto-1, .piloto-2 {
+        grid-column: span 1; 
+        grid-row: 6;
+    }
+
+
+    /* Pongo Las estadisticas de los equipos en filas distintas */
+
+    .stat-constructores,
+    .stat-pilotos,
+    .victorias-equipo {
+        grid-column: span 2; 
+        width: 60%; 
+        margin: 0 auto; 
+    }
+
+    .stat-constructores {
+        grid-row: 2; 
+    }
+
+    .stat-pilotos {
+        grid-row: 3; 
+    }
+
+    .victorias-equipo {
+        grid-row: 4; 
+    }
+
+    /* La imagen ocupa ambas columnas en mi primera fila */
+    .img-equipos {
+        max-width: 40%;
+        object-fit: contain;
+        grid-column: span 2; 
+        grid-row: 1; 
+    }
 }
+
+
 
 /* MOBILE L 425PX*/
 @media(max-width: 426px) {
@@ -645,6 +694,53 @@ td:last-child {
         display: none;
     }
 
+     /*EQUIPOS*/
+
+    /*Tamaño font*/
+    
+     body {
+        font-size: 14px; 
+    }
+
+    .equipo h3 {
+        font-size: 20px; 
+    }
+
+    .equipo p {
+        font-size: 14px; 
+    }
+
+    .numero-champ-constr,
+    .numero-champ-piloto,
+    .num-victorias,
+    .numero-piloto {
+        font-size: 22px; 
+    }
+
+    .nombre-piloto, .estadistica {
+        font-size: 16px; 
+    }
+
+    .pais-piloto {
+        font-size: 14px; 
+    }
+
+    /*Ajuste padding y tamaño de los contendores*/
+
+    .main-equipos section {
+        padding: 10px; 
+    }
+
+
+    .piloto-1, .piloto-2 {
+        min-height: 100px; 
+        min-width: 170px;
+    }
+
+    .stats-grid {
+        grid-row-gap: 20px;
+    }
+
 }
 
 
@@ -736,9 +832,6 @@ td:last-child {
     }
 
 
-
-
-
     /* resultados */
 
     table {
@@ -808,6 +901,47 @@ td:last-child {
         padding-right: 4px;
     }
 
+    /* EQUIPOS */
+
+    body {
+        font-size: 12px; 
+    }
+
+    .equipo h3 {
+        font-size: 16px; 
+    }
+
+    .equipo p {
+        font-size: 10px; 
+    }
+
+    .numero-champ-constr,
+    .numero-champ-piloto,
+    .num-victorias,
+    .numero-piloto {
+        font-size: 18px; 
+    }
+
+    .nombre-piloto, .estadistica {
+        font-size: 14px; 
+    }
+
+    .pais-piloto {
+        font-size: 12px; 
+    }
+
+    /*Ajuste padding y tamaño de los contendores*/
+
+    .main-equipos section {
+        padding: 10px; 
+    }
+
+
+    .piloto-1, .piloto-2 {
+        min-height: 100px; 
+        min-width: 130px;
+    }
+
 } 
 
 /* Movil S 320px */
@@ -841,6 +975,13 @@ td:last-child {
 
     .conteiner-resultados {
         gap: 2px; 
+    }
+
+    /* EQUIPOS */
+
+    .stat-constructores, .stat-pilotos, .victorias-equipo {
+        min-height: 100px;
+        min-width: auto; 
     }
 
 
