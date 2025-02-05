@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    &:hover{
+            text-decoration: underline; 
+    }
+}
+
+body {
+    font-family: "Orbitron", serif;
+    background-color: #252525;
+    color: white;
+}
+

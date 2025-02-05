@@ -1,0 +1,33 @@
+.main-index {
+    height: 100vh;
+    background-image: url('../assets/img/2053305638.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+    color: white;
+    position: relative;
+    section {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        gap: 10rem; 
+        width: 100%;
+        p {
+            padding: 10px 10px;
+            font-size: 22px;
+            background-color: rgba(37, 37, 37, 0.7);
+            margin-top: 15px;
+            border-radius: 20px;
+            span {
+                color: #FF0000;
+            }
+        }
+    }
+    .text-index {
+        font-size: 30px;
+        position: absolute;
+        left: 540px;
+        top: 190px;
+    }
+}

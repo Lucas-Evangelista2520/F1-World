@@ -1,0 +1,21 @@
+{
+  "name": "f1world",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Lucas-Evangelista2520/F1-World#readme",
+  "bugs": {
+    "url": "https://github.com/Lucas-Evangelista2520/F1-World/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucas-Evangelista2520/F1-World.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./scss/style.scss:./css/nuevo.css"
+  }
+}

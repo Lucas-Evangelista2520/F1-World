@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+/* 1° llamamos a todo lo que este en la carpeta utilities*/
+
+
+
+
+/*2° llamamos a la carpeta base*/
+@import "./base/reset";
+
+
+
+/*3° llamamos a todo lo de la carpeta layout*/
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/footer";
+
+
+
+/*4° llamamos a todo lo de la carpeta components*/
+@import "./components/navbar";
+
+
+
+/*5° llamamos todo lo que sea media query*/

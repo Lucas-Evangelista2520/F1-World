@@ -1,0 +1,15 @@
+footer {
+    background-color: #414141;
+    height: 30px;
+    position: relative;
+    section {
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        p {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}

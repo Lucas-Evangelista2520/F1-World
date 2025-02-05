@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+/* 1° llamamos a todo lo que este en la carpeta utilities*/
+/*2° llamamos a la carpeta base*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: "Orbitron", serif;
+  background-color: #252525;
+  color: white;
+}
+
+/*3° llamamos a todo lo de la carpeta layout*/
+header .title {
+  background-color: #450505;
+  color: white;
+  /*margin: 20px;*/
+  padding: 20px 20px 20px 5px;
+  font-size: 60px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+header .title h2 {
+  font-size: 24px;
+}
+
+.main-index {
+  height: 100vh;
+  background-image: url("../assets/img/2053305638.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;
+  color: white;
+  position: relative;
+}
+.main-index section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  width: 100%;
+}
+.main-index section p {
+  padding: 10px 10px;
+  font-size: 22px;
+  background-color: rgba(37, 37, 37, 0.7);
+  margin-top: 15px;
+  border-radius: 20px;
+}
+.main-index section p span {
+  color: #FF0000;
+}
+.main-index .text-index {
+  font-size: 30px;
+  position: absolute;
+  left: 540px;
+  top: 190px;
+}
+
+footer {
+  background-color: #414141;
+  height: 30px;
+  position: relative;
+}
+footer section {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+footer section p {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/*4° llamamos a todo lo de la carpeta components*/
+.navegador {
+  background-color: #414141;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150%;
+}
+.navegador li ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  font-size: 24px;
+}
+.navegador li ul a:visited {
+  color: white;
+}
+.navegador li ul a:focus, .navegador li ul a:active {
+  outline: none;
+}
+
+/*5° llamamos todo lo que sea media query*/
+
+/*# sourceMappingURL=nuevo.css.map */
