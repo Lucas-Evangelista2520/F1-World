@@ -13,7 +13,10 @@
 @import "./layout/header";
 @import "./layout/main-index";
 @import "./layout/footer";
-
+@import "./layout/main-equipos";
+@import "./layout/main-pilotos";
+@import "./layout/main-calendario";
+@import "./layout/main-resultados";
 
 
 /*4° llamamos a todo lo de la carpeta components*/
@@ -22,3 +25,4 @@
 
 
 /*5° llamamos todo lo que sea media query*/
+@import "./layout/mediaQ/media768";

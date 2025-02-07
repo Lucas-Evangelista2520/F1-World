@@ -1,0 +1,104 @@
+.equipo {
+    background-color: #1E1E1E;
+    padding: 10px;
+    h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+.img-equipos {
+    size: cover;
+    width: 287px;
+    height: auto;
+    &.img-equipos {
+        grid-area: imagen;
+        max-width: 50%;
+        height: auto;
+        justify-content: center;
+        display: block;
+        margin: 0 auto;
+        align-self: center;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #41414175;
+        }
+}
+
+.numero-champ-constr,
+.numero-champ-piloto,
+.num-victorias,
+.numero-piloto {
+    color: #FF0000;
+    font-size: 36px;
+}
+
+.pais-piloto {
+    color: #FFFFFF;
+    opacity: 50%;
+    font-size: 16px;
+}
+
+.nombre-piloto,
+.estadistica {
+    font-size: 20px;
+}
+
+.main-equipos {
+    section {
+        padding: 20px;
+    }
+}
+
+.stats-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas:
+    "constructores pilotos victorias"
+    "piloto1 imagen piloto2";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 40px;
+    grid-column-gap: 20px;
+    justify-items: center;
+    justify-self: center;
+
+    .stat-constructores {
+        grid-area: constructores;
+        min-height: 100px;
+        min-width: 300px;
+    }
+
+    .stat-pilotos {
+        grid-area: pilotos;
+        min-height: 100px;
+        min-width: 300px;
+    }
+
+    .victorias-equipo {
+        grid-area: victorias;
+        min-height: 100px;
+        min-width: 300px;
+    }
+
+    .piloto-1,
+    .piloto-2 {
+        grid-area: piloto1 piloto2;
+        min-height: 160px;
+        min-width: 250px;
+    }
+
+    article {
+        background-color: #41414175;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+    }
+}

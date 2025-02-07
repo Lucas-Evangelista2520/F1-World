@@ -1,0 +1,80 @@
+.container-pilotos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    text-align: center;
+    gap: 1.25rem;
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    section {
+        flex: 1 1 calc(30% - 1.25rem);
+        max-width: calc(30% - 1.25rem);
+        box-sizing: border-box;
+        padding: 30px 20px;
+        text-align: center;
+
+        h3 {
+            font-size: 22px;
+            min-height: 3rem;
+        }
+    }
+}
+
+.equipo-dato {
+    color: #AB0C0C;
+    font-size: 16px;
+}
+
+.numero-dato {
+    color: #FF0000;
+    font-size: 16px;
+}
+
+.piloto {
+    background-color: #1E1E1E;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 500px;
+}
+
+.info-pilotos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1.25rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #252525;
+        border-radius: 40px;
+        padding: 5px 15px;
+        text-align: center;
+        box-sizing: border-box;
+        flex-grow: 1;
+
+        .dato {
+            font-size: 12px;
+        }
+
+        &:nth-child(3) {
+            grid-column: span 2;
+        }
+    }
+}

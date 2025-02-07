@@ -1,0 +1,62 @@
+@media (max-width: 768px) {
+    body header .title {
+        h1{
+            font-size: 36px;
+        }
+        h2 {
+        font-size: 20px;
+        }
+    }
+    nav {
+        ul {
+        font-size: 16px;
+        }
+    }
+
+    .main-index {
+        section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        width: 100%;
+
+        p {
+            padding: 10px 10px;
+            font-size: 16px;
+            background-color: rgba(37, 37, 37, 0.7);
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+        }
+
+        .text-index {
+        font-size: 22px;
+        position: absolute;
+        left: 400px;
+        top: 160px;
+        }
+    }
+
+    /* CALENDARIO */
+    .container-calendario .fila-carrera .datos-carrera .detalle span {
+            font-size: 10px;
+            color: #FFFFFF;
+            opacity: 50%;
+        
+    }
+
+    .fila-carrera .fecha {
+        min-width: 120px;
+        span {
+            font-size: 14px;
+        }
+    }
+
+    .fila-carrera .datos-carrera {
+        p {
+            font-size: 16px;
+        }
+    }
+
+}
