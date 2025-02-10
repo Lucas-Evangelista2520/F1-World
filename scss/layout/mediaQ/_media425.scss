@@ -1,0 +1,193 @@
+@media (max-width: 426px) {
+    body header .title {
+        h1{
+            font-size: 28px;
+        }
+        h2 {
+        font-size: 10px;
+        }
+    }
+    nav {
+        ul {
+        font-size: 14px;
+        gap: 14px;
+        margin-right: 10px;
+        margin: 5px;
+        }
+    }
+
+    footer {
+        section {
+            p {
+                font-size: 10px;
+                margin-right: 3px;
+            }
+        }
+    }
+
+    /* INDEX */
+
+    .main-index {
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            width: 100%;
+    
+            p {
+                padding: 10px 10px;
+                font-size: 14px;
+                background-color: rgba(37, 37, 37, 0.7);
+                margin-top: 20px;
+                border-radius: 20px;
+            }
+        }
+    
+        .text-index {
+            font-size: 16px;
+            position: absolute;
+            left: 200px;
+            top: 160px;
+        }
+    }
+    
+    /* PILOTOS */
+
+    .container-pilotos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        section {
+            flex: 1 1 100%;
+            max-width: 100%;
+            padding: 20px 10px;
+        }
+
+        img {
+            width: 50%;
+        }
+
+        .piloto {
+            min-height: auto;
+        }
+    }
+
+    /* RESULTADOS */
+
+    .conteiner-resultados {
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        justify-content: center;
+        flex-direction: row;
+        padding: 5px;
+    
+        table {
+            color: white;
+            font-size: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+    
+            th {
+                padding: 5px 5px;
+                font-weight: 700;
+                white-space: nowrap;
+                font-size: 10px;
+            }
+        }
+    }
+    
+    /* CALENDARIO */
+
+    .container-calendario .fila-carrera .datos-carrera .detalle {
+        span {
+        font-size: 8px;
+            color: #FFFFFF;
+            opacity: 50%;
+
+            &:first-child {
+            display: none;
+            }
+
+            &:last-child {
+            display: none;
+            }
+        }
+    }
+
+        .container-calendario .fila-carrera .fecha {
+        min-width: 90px;
+            .mes {
+                font-size: 10px;
+            }
+            .dia {
+                font-size: 10px;
+            }
+
+        }
+
+        .container-calendario .fila-carrera .datos-carrera {
+            p {
+            font-size: 12px;
+            }
+        }
+
+        .check-style {
+        font-size: 18px;
+        }
+
+        /*EQUIPOS*/
+
+        // Tamaño font
+body {
+
+    .equipo {
+        h3 {
+            font-size: 20px; 
+        }
+
+        p {
+            font-size: 14px; 
+        }
+
+        .numero-champ-constr,
+        .numero-champ-piloto,
+        .num-victorias,
+        .numero-piloto {
+            font-size: 22px; 
+        }
+
+        .nombre-piloto, .estadistica {
+            font-size: 16px; 
+        }
+
+        .pais-piloto {
+            font-size: 14px; 
+        }
+    }
+}
+
+// Ajuste padding y tamaño de los contendores
+.main-equipos {
+    section {
+        padding: 10px; 
+    }
+
+    .equipo {
+        .piloto-1, .piloto-2 {
+            min-height: 100px; 
+            min-width: 170px;
+        }
+
+        .stats-grid {
+            grid-row-gap: 20px;
+        }
+    }
+}
+
+
+}

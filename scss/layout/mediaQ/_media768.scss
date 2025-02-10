@@ -48,14 +48,12 @@
 
     .container-calendario .fila-carrera .fecha {
         min-width: 120px;
-    }
-
-    .container-calendario .fila-carrera .fecha .dia {
-        font-size: 14px;
-    }
-
-    .container-calendario .fila-carrera .fecha .mes {
-        font-size: 14px;
+        .dia {
+            font-size: 14px;
+        }
+        .mes {
+            font-size: 14px;
+        }
     }
 
     .container-calendario .fila-carrera .datos-carrera p {
