@@ -11,11 +11,16 @@
 
 /*3° llamamos a todo lo de la carpeta layout*/
 @import "./layout/header";
-@import "./layout/main-index";
 @import "./layout/footer";
+/*INDEX*/
+@import "./layout/main-index";
+/*EQUIPOS*/
 @import "./layout/main-equipos";
+/*PILOTOS*/
 @import "./layout/main-pilotos";
+/*CALENDARIO*/
 @import "./layout/main-calendario";
+/*RESULTADOS*/
 @import "./layout/main-resultados";
 
 

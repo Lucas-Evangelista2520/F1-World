@@ -45,6 +45,23 @@ header .title h2 {
   font-size: 24px;
 }
 
+footer {
+  background-color: #414141;
+  height: 30px;
+  position: relative;
+}
+footer section {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+footer section p {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/*INDEX*/
 .main-index {
   height: 100vh;
   background-image: url("../assets/img/2053305638.webp");
@@ -79,25 +96,11 @@ header .title h2 {
   top: 190px;
 }
 
-footer {
-  background-color: #414141;
-  height: 30px;
-  position: relative;
-}
-footer section {
-  display: flex;
-  justify-content: end;
-  align-items: flex-end;
-}
-footer section p {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
+/*EQUIPOS*/
 .equipo {
   background-color: #1E1E1E;
   padding: 10px;
+  border-radius: 20px;
 }
 .equipo h3 {
   font-size: 30px;
@@ -191,6 +194,7 @@ footer section p {
   height: 100%;
 }
 
+/*PILOTOS*/
 .container-pilotos {
   display: flex;
   justify-content: space-evenly;
@@ -266,6 +270,7 @@ footer section p {
   grid-column: span 2;
 }
 
+/*CALENDARIO*/
 .container-calendario {
   display: flex;
   flex-direction: column;
@@ -320,7 +325,8 @@ footer section p {
   color: #FFFFFF;
   opacity: 50%;
 }
-.container-calendario .fila-carrera .check-style {
+
+.check-style {
   font-size: 38px;
   color: rgb(20, 174, 92);
   text-align: end;
@@ -333,6 +339,7 @@ footer section p {
   border-bottom-right-radius: 10px;
 }
 
+/*RESULTADOS*/
 .conteiner-resultados {
   display: flex;
   grid-template-columns: 1fr 1fr;
@@ -343,7 +350,8 @@ footer section p {
 }
 .conteiner-resultados table {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
+  border-spacing: 0px;
   table-layout: fixed;
   border-collapse: separate;
   background-color: rgba(65, 65, 65, 0.5);
@@ -356,14 +364,18 @@ footer section p {
   padding: 15px 15px;
   font-weight: 700;
   white-space: nowrap;
-  font-size: 24px;
+  font-size: 20px;
+  color: #FF0000;
 }
 .conteiner-resultados table thead {
   border-bottom: solid 1px rgb(65, 65, 65);
 }
 .conteiner-resultados table td {
   padding: 15px;
-  border-bottom: solid 1px rgba(65, 65, 65, 0.6);
+  border-top: solid 1px rgb(65, 65, 65);
+}
+.conteiner-resultados table td:first-child {
+  border-top: solid 1px rgb(65, 65, 65);
 }
 .conteiner-resultados table td:last-child {
   text-align: right;
@@ -410,7 +422,7 @@ nav ul {
     font-size: 20px;
   }
   nav ul {
-    font-size: 16px;
+    font-size: 18px;
   }
   .main-index section {
     display: flex;
@@ -438,14 +450,60 @@ nav ul {
     color: #FFFFFF;
     opacity: 50%;
   }
-  .fila-carrera .fecha {
+  .container-calendario .fila-carrera .fecha {
     min-width: 120px;
   }
-  .fila-carrera .fecha span {
+  .container-calendario .fila-carrera .fecha .dia {
     font-size: 14px;
   }
-  .fila-carrera .datos-carrera p {
+  .container-calendario .fila-carrera .fecha .mes {
+    font-size: 14px;
+  }
+  .container-calendario .fila-carrera .datos-carrera p {
     font-size: 16px;
+  }
+  /*EQUIPOS*/
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-row-gap: 20px;
+    grid-column-gap: 0;
+    width: 100%;
+    justify-items: center;
+  }
+  .stats-grid .img-equipos {
+    max-width: 40%;
+    object-fit: contain;
+    grid-column: span 2;
+    grid-row: 1;
+  }
+  .stats-grid .stat-constructores,
+  .stats-grid .stat-pilotos,
+  .stats-grid .victorias-equipo {
+    grid-column: span 2;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .stats-grid .stat-constructores.stat-constructores,
+  .stats-grid .stat-pilotos.stat-constructores,
+  .stats-grid .victorias-equipo.stat-constructores {
+    grid-row: 2;
+  }
+  .stats-grid .stat-constructores.stat-pilotos,
+  .stats-grid .stat-pilotos.stat-pilotos,
+  .stats-grid .victorias-equipo.stat-pilotos {
+    grid-row: 3;
+  }
+  .stats-grid .stat-constructores.victorias-equipo,
+  .stats-grid .stat-pilotos.victorias-equipo,
+  .stats-grid .victorias-equipo.victorias-equipo {
+    grid-row: 4;
+  }
+  .stats-grid .piloto-1,
+  .stats-grid .piloto-2 {
+    grid-column: span 1;
+    grid-row: 6;
   }
 }
 

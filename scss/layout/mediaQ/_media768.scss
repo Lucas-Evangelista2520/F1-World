@@ -9,7 +9,7 @@
     }
     nav {
         ul {
-        font-size: 16px;
+        font-size: 18px; 
         }
     }
 
@@ -46,16 +46,65 @@
         
     }
 
-    .fila-carrera .fecha {
+    .container-calendario .fila-carrera .fecha {
         min-width: 120px;
-        span {
-            font-size: 14px;
-        }
     }
 
-    .fila-carrera .datos-carrera {
-        p {
-            font-size: 16px;
+    .container-calendario .fila-carrera .fecha .dia {
+        font-size: 14px;
+    }
+
+    .container-calendario .fila-carrera .fecha .mes {
+        font-size: 14px;
+    }
+
+    .container-calendario .fila-carrera .datos-carrera p {
+        font-size: 16px;
+    }
+
+
+    /*EQUIPOS*/
+
+    .stats-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-row-gap: 20px;
+        grid-column-gap: 0;
+        width: 100%;
+        justify-items: center;
+
+        .img-equipos {
+            max-width: 40%;
+            object-fit: contain;
+            grid-column: span 2;
+            grid-row: 1;
+        }
+
+        .stat-constructores,
+        .stat-pilotos,
+        .victorias-equipo {
+            grid-column: span 2;
+            width: 60%;
+            margin: 0 auto;
+
+            &.stat-constructores {
+            grid-row: 2;
+            }
+
+            &.stat-pilotos {
+            grid-row: 3;
+            }
+
+            &.victorias-equipo {
+            grid-row: 4;
+            }
+        }
+
+        .piloto-1,
+        .piloto-2 {
+            grid-column: span 1;
+            grid-row: 6;
         }
     }
 

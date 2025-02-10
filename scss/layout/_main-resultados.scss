@@ -8,7 +8,8 @@
 
     table {
         color: white;
-        font-size: 20px;
+        font-size: 18px;
+        border-spacing: 0px;
         table-layout: fixed;
         border-collapse: separate;
         background-color: rgba(65, 65, 65, 0.5);
@@ -21,7 +22,8 @@
             padding: 15px 15px;
             font-weight: 700;
             white-space: nowrap;
-            font-size: 24px;
+            font-size: 20px;
+            color: #FF0000;
         }
 
         thead {
@@ -30,7 +32,12 @@
 
         td {
             padding: 15px;
-            border-bottom: solid 1px rgba(65, 65, 65, 0.6);
+            border-top: solid 1px rgba(65, 65, 65, 1);
+
+            &:first-child {
+                border-top: solid 1px rgba(65, 65, 65, 1);
+            }
+
 
             &:last-child {
                 text-align: right;
