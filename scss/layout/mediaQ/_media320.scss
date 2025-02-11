@@ -1,0 +1,47 @@
+@media(max-width: 321px) {
+
+// CALENDARIO
+
+.container-calendario .fila-carrera .datos-carrera .detalle {
+    margin-top: 5px;
+}
+
+// RESULTADO
+
+.conteiner-resultados {
+    gap: 2px;
+    table {
+        table-layout: fixed;
+        width: 50%;
+        th {
+            padding: 8px 8px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+        td {
+            font-size: 10px;
+            padding: 5px;
+        }
+
+    }
+}
+
+// EQUIPOS
+
+.stats-grid {
+    .stat-constructores, .stat-pilotos, .victorias-equipo {
+        min-height: 80px;
+        min-width: auto; 
+    }
+}
+
+body .main-equipos .equipo {
+    .piloto-1, .piloto-2 {
+        min-height: 80px; 
+        min-width: 125px;
+        }
+}
+
+
+
+}
