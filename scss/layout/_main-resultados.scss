@@ -1,9 +1,7 @@
 .conteiner-resultados {
-    display: flex;
+    @include flex(center, stretch, row);
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    justify-content: center;
-    flex-direction: row;
     padding: 20px;
 
     table {
@@ -12,7 +10,7 @@
         border-spacing: 0px;
         table-layout: fixed;
         border-collapse: separate;
-        background-color: rgba(65, 65, 65, 0.5);
+        background-color: map-get($background-colors, semi-transparent-dark-gray);
         margin-top: 15px;
         margin-bottom: 15px;
         border-radius: 10px;

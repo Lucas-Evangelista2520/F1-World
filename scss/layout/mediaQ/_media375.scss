@@ -21,7 +21,6 @@
         }
     }
     footer {
-        background-color: #414141;
         height: 30px;
         position: relative;
         section {
@@ -45,16 +44,12 @@
     position: relative;
 
     section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         gap: 1rem;
         width: 100%;
 
         p {
             padding: 10px 10px;
             font-size: 10px;
-            background-color: rgba(37, 37, 37, 0.7);
             margin-top: 20px;
             border-radius: 20px;
         }
@@ -71,9 +66,6 @@
 // PILOTOS
 
 .container-pilotos {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
 
     section {
         flex: 1 1 100%;
@@ -93,12 +85,6 @@
 // RESULTADOS 
 
 .conteiner-resultados {
-    display: flex; 
-    grid-template-columns: 1fr 1fr; 
-    gap: 8px; 
-    justify-content: center;
-    flex-direction: row;
-    padding: 5px;
 
     table {
         color: white;

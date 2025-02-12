@@ -1,7 +1,7 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 /* 1° llamamos a todo lo que este en la carpeta utilities*/
 /*2° llamamos a la carpeta base*/
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +20,7 @@ a:hover {
 }
 
 body {
-  font-family: "Orbitron", serif;
+  font-family: "Orbitron", sans-serif;
   background-color: #252525;
   color: white;
 }
@@ -76,6 +76,8 @@ footer section p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
   gap: 10rem;
   width: 100%;
 }
@@ -119,10 +121,10 @@ footer section p {
   grid-area: imagen;
   max-width: 50%;
   height: auto;
-  justify-content: center;
   display: block;
-  margin: 0 auto;
+  justify-content: center;
   align-self: center;
+  margin: 0 auto;
   padding: 10px;
   border-radius: 10px;
   background-color: rgba(65, 65, 65, 0.4588235294);
@@ -187,9 +189,10 @@ footer section p {
   background-color: rgba(65, 65, 65, 0.4588235294);
   border-radius: 20px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
   text-align: center;
   height: 100%;
 }
@@ -198,6 +201,8 @@ footer section p {
 .container-pilotos {
   display: flex;
   justify-content: space-evenly;
+  align-items: stretch;
+  flex-direction: row;
   flex-wrap: wrap;
   padding: 30px 20px;
   text-align: center;
@@ -234,9 +239,10 @@ footer section p {
   background-color: #1E1E1E;
   border-radius: 40px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
   height: 100%;
   min-height: 500px;
 }
@@ -254,8 +260,10 @@ footer section p {
 }
 .info-pilotos article {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
   background-color: #252525;
   border-radius: 40px;
   padding: 5px 15px;
@@ -273,21 +281,28 @@ footer section p {
 /*CALENDARIO*/
 .container-calendario {
   display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
   flex-direction: column;
+  flex-wrap: nowrap;
   gap: 30px;
   margin: 20px;
 }
 .container-calendario .fila-carrera {
   display: flex;
+  justify-content: flex-start;
   align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 .container-calendario .fila-carrera .fecha {
   font-size: 20px;
   background-color: #AF0404;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
   text-align: center;
   padding: 10px;
   border-top-left-radius: 10px;
@@ -305,9 +320,11 @@ footer section p {
   font-size: 12px;
   background-color: #414141;
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-grow: 1;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -317,6 +334,9 @@ footer section p {
 .container-calendario .fila-carrera .datos-carrera .detalle {
   display: flex;
   justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
   gap: 30px;
   width: 100%;
 }
@@ -333,8 +353,10 @@ footer section p {
   background-color: rgba(20, 174, 92, 0.3);
   padding: 10px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -342,10 +364,12 @@ footer section p {
 /*RESULTADOS*/
 .conteiner-resultados {
   display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  justify-content: center;
-  flex-direction: row;
   padding: 20px;
 }
 .conteiner-resultados table {
@@ -425,16 +449,12 @@ nav ul {
     font-size: 18px;
   }
   .main-index section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 5rem;
     width: 100%;
   }
   .main-index section p {
     padding: 10px 10px;
     font-size: 16px;
-    background-color: rgba(37, 37, 37, 0.7);
     margin-top: 20px;
     border-radius: 20px;
   }
@@ -525,16 +545,12 @@ nav ul {
   }
   /* INDEX */
   .main-index section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 1rem;
     width: 100%;
   }
   .main-index section p {
     padding: 10px 10px;
     font-size: 14px;
-    background-color: rgba(37, 37, 37, 0.7);
     margin-top: 20px;
     border-radius: 20px;
   }
@@ -547,9 +563,10 @@ nav ul {
   /* PILOTOS */
   .container-pilotos {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
   .container-pilotos section {
     flex: 1 1 100%;
@@ -564,11 +581,8 @@ nav ul {
   }
   /* RESULTADOS */
   .conteiner-resultados {
-    display: flex;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
-    justify-content: center;
-    flex-direction: row;
     padding: 5px;
   }
   .conteiner-resultados table {
@@ -660,7 +674,6 @@ nav ul {
     margin: 5px;
   }
   footer {
-    background-color: #414141;
     height: 30px;
     position: relative;
   }
@@ -679,16 +692,12 @@ nav ul {
     position: relative;
   }
   .main-index section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 1rem;
     width: 100%;
   }
   .main-index section p {
     padding: 10px 10px;
     font-size: 10px;
-    background-color: rgba(37, 37, 37, 0.7);
     margin-top: 20px;
     border-radius: 20px;
   }
@@ -697,11 +706,6 @@ nav ul {
     position: absolute;
     left: 170px;
     top: 160px;
-  }
-  .container-pilotos {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
   }
   .container-pilotos section {
     flex: 1 1 100%;
@@ -713,14 +717,6 @@ nav ul {
   }
   .container-pilotos img {
     width: 40%;
-  }
-  .conteiner-resultados {
-    display: flex;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    justify-content: center;
-    flex-direction: row;
-    padding: 5px;
   }
   .conteiner-resultados table {
     color: white;

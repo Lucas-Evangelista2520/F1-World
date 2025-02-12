@@ -1,7 +1,5 @@
 .container-pilotos {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    @include flex(space-evenly, stretch, row, wrap);
     padding: 30px 20px;
     text-align: center;
     gap: 1.25rem;
@@ -37,12 +35,9 @@
 }
 
 .piloto {
-    background-color: #1E1E1E;
+    background-color: map-get($background-colors, black-gray);
     border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    @include flex(space-between, center, column);
     height: 100%;
     min-height: 500px;
 }
@@ -59,10 +54,8 @@
     box-sizing: border-box;
 
     article {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #252525;
+        @include flex(flex-start, center, column);
+        background-color: map-get($background-colors, light-gray);
         border-radius: 40px;
         padding: 5px 15px;
         text-align: center;

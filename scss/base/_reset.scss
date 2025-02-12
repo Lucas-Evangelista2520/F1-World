@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +17,7 @@ a {
 }
 
 body {
-    font-family: "Orbitron", serif;
+    font-family: $orbitron;
     background-color: #252525;
     color: white;
 }

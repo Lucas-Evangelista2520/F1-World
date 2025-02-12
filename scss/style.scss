@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 /* 1° llamamos a todo lo que este en la carpeta utilities*/
-
-
+@import "./utilities/variables";
+@import "./utilities/mixin";
 
 
 /*2° llamamos a la carpeta base*/
+@import "./base/tipografia";
 @import "./base/reset";
 
 

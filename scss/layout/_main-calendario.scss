@@ -1,20 +1,15 @@
 .container-calendario {
-    display: flex;
-    flex-direction: column;
+    @include flex(flex-start, stretch, column);
     gap: 30px; 
     margin: 20px;
 
     .fila-carrera {
-        display: flex;
-        align-items: stretch;
+        @include flex();
 
         .fecha {
             font-size: 20px;
-            background-color: #AF0404;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            background-color: map-get($background-colors, deep-red);
+            @include flex(center, center, column);
             text-align: center;
             padding: 10px;
             border-top-left-radius: 10px;
@@ -33,11 +28,9 @@
 
         .datos-carrera {
             font-size: 12px;
-            background-color: #414141;
-            display: flex;
-            flex-direction: column;
+            background-color:map-get($background-colors, dark-gray);
+            @include flex(space-between, flex-start, column);
             flex-grow: 1; 
-            justify-content: space-between;
             padding-left: 10px;
             padding-right: 10px;
 
@@ -46,8 +39,7 @@
             }
 
             .detalle {
-                display: flex;
-                justify-content: flex-start;
+                @include flex(flex-start);
                 gap: 30px;
                 width: 100%;
 
@@ -64,11 +56,9 @@
     font-size: 38px;
     color: rgba(20, 174, 92, 1);
     text-align: end;
-    background-color: rgba(20, 174, 92, 0.3);
+    background-color: map-get($background-colors, transparent-green);
     padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex(center, center);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
