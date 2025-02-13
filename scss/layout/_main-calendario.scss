@@ -7,7 +7,7 @@
         @include flex();
 
         .fecha {
-            font-size: 20px;
+            font-size: 1.25rem;
             background-color: map-get($background-colors, deep-red);
             @include flex(center, center, column);
             text-align: center;
@@ -18,16 +18,16 @@
 
             .dia {
                 font-weight: bold;
-                font-size: 22px;
+                font-size: 1.375rem;
             }
 
             .mes {
-                font-size: 16px;
+                font-size: 1rem;
             }
         }
 
         .datos-carrera {
-            font-size: 12px;
+            font-size: .75rem;
             background-color:map-get($background-colors, dark-gray);
             @include flex(space-between, flex-start, column);
             flex-grow: 1; 
@@ -35,7 +35,7 @@
             padding-right: 10px;
 
             p {
-                font-size: 20px;
+                font-size: 1.25rem;
             }
 
             .detalle {
@@ -44,7 +44,7 @@
                 width: 100%;
 
                 span {
-                    font-size: 14px;
+                    font-size: .875rem;
                     color: #FFFFFF;
                     opacity: 50%;
                 }
@@ -53,7 +53,7 @@
     }
 }
 .check-style {
-    font-size: 38px;
+    font-size: 2.375rem;
     color: rgba(20, 174, 92, 1);
     text-align: end;
     background-color: map-get($background-colors, transparent-green);

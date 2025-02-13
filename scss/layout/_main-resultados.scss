@@ -1,12 +1,12 @@
 .conteiner-resultados {
     @include flex(center, stretch, row);
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    padding: 20px;
+    gap: .625rem;
+    padding: 1.25rem;
 
     table {
         color: white;
-        font-size: 18px;
+        font-size: 1.125rem;
         border-spacing: 0px;
         table-layout: fixed;
         border-collapse: separate;
@@ -17,10 +17,10 @@
         border: 4px solid rgba(0, 0, 0, 0.9);
 
         th {
-            padding: .9375rem .9375rem;
+            padding: .75rem .5rem;
             font-weight: 700;
             white-space: nowrap;
-            font-size: 20px;
+            font-size: 1.25rem;
             color: #FF0000;
         }
 
@@ -29,7 +29,7 @@
         }
 
         td {
-            padding: .9375rem;
+            padding: .7500rem;
             border-top: solid 1px rgba(65, 65, 65, 1);
 
             &:first-child {

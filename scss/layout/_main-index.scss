@@ -13,7 +13,7 @@
         width: 100%;
         p {
             padding: 10px 10px;
-            font-size: 22px;
+            font-size: 1.375rem;
             background-color: map-get($background-colors, semi-transparent-gray);
             margin-top: 15px;
             border-radius: 20px;
@@ -23,7 +23,7 @@
         }
     }
     .text-index {
-        font-size: 30px;
+        font-size: 1.875rem;
         position: absolute;
         left: 540px;
         top: 190px;

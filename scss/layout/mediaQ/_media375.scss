@@ -6,15 +6,15 @@
         height: auto;
         padding: 10px 10px 10px 5px;
         h1{
-            font-size: 20px;
+            font-size: 1.25rem;
         }
         h2 {
-        font-size: 10px;
+        font-size: .625rem;
         }
     }
     nav {
         ul {
-        font-size: 10px;
+        font-size: .625rem;
         gap: 1.25rem;
         margin-right: .625rem;
         margin: .3125rem;
@@ -25,7 +25,7 @@
         position: relative;
         section {
             p {
-                font-size: 10px;
+                font-size: .625rem;
                 margin-right: .1875rem;
             }
         }
@@ -48,15 +48,15 @@
         width: 100%;
 
         p {
-            padding: 10px 10px;
-            font-size: 10px;
-            margin-top: 20px;
+            padding: .625rem .625rem;
+            font-size: .625rem;
+            margin-top: 1.25rem;
             border-radius: 20px;
         }
     }
 
     .text-index {
-        font-size: 16px;
+        font-size: 1rem;
         position: absolute;
         left: 170px;
         top: 160px;
@@ -88,7 +88,7 @@
 
     table {
         color: white;
-        font-size: 8px;
+        font-size: .5rem;
         margin-top: 5px;
         margin-bottom: 5px;
         border: 2px solid rgba(0, 0, 0, 0.9);
@@ -114,15 +114,15 @@
 
 /* CALENDARIO */
 .container-calendario .fila-carrera .datos-carrera {
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: .25rem;
+    padding-right: .25rem;
     p {
-        font-size: 10px;
+        font-size: .625rem;
     }
     .detalle {
         gap: 0.9375rem;
         span {
-            font-size: 8px;
+            font-size: .5rem;
             color: #FFFFFF;
             opacity: 50%;
         }
@@ -134,10 +134,10 @@
 .container-calendario .fila-carrera .fecha {
     min-width: 70px;
         .mes {
-            font-size: 8px;
+            font-size: .5rem;
         }
         .dia {
-            font-size: 8px;
+            font-size: .5rem;
         }
 
     }
@@ -145,58 +145,58 @@
 
 
 .datos-carrera {
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: .25rem;
+    padding-right: .25rem;
 
     p {
-        font-size: 10px;
+        font-size: .625rem;
     }
 }
 
 .check-style {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 // EQUIPOS
 
 body {
-    font-size: 12px;
+    font-size: .75rem;
     }
 
     .main-equipos {
     section {
-        padding: 10px;
+        padding: .625rem;
     }
 
     .equipo {
         h3 {
-        font-size: 16px;
+        font-size: 1rem;
         }
 
         p {
-        font-size: 10px;
+        font-size: .625rem;
         }
 
         .numero-champ-constr,
         .numero-champ-piloto,
         .num-victorias,
         .numero-piloto {
-        font-size: 18px;
+        font-size: 1.125rem;
         }
 
         .nombre-piloto,
         .estadistica {
-        font-size: 14px;
+        font-size: .875rem;
         }
 
         .pais-piloto {
-        font-size: 12px;
+        font-size: .75rem;
         }
 
         .piloto-1,
         .piloto-2 {
-        min-height: 100px;
-        min-width: 140px;
+        min-height: 6.25rem;
+        min-width: 8.75rem;
         }
     }
 }
