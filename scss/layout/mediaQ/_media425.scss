@@ -10,9 +10,9 @@
     nav {
         ul {
         font-size: 14px;
-        gap: 14px;
-        margin-right: 10px;
-        margin: 5px;
+        gap: .875rem;
+        margin-right: .625rem;
+        margin: .3125rem;
         }
     }
 
@@ -20,7 +20,7 @@
         section {
             p {
                 font-size: 10px;
-                margin-right: 3px;
+                margin-right: .1875rem;
             }
         }
     }
@@ -72,8 +72,8 @@
 
     .conteiner-resultados {
         grid-template-columns: 1fr 1fr;
-        gap: 8px;
-        padding: 5px;
+        gap: .5rem;
+        padding: .3125rem;
     
         table {
             color: white;
@@ -83,7 +83,7 @@
             border-radius: 10px;
     
             th {
-                padding: 5px 5px;
+                padding: .3125rem .3125rem;
                 font-weight: 700;
                 white-space: nowrap;
                 font-size: 10px;
