@@ -38,8 +38,14 @@
     background-color: map-get($background-colors, black-gray);
     border-radius: 40px;
     @include flex(space-between, center, column);
-    height: 100%;
+    height: auto;
     min-height: 31.25rem;
+    transition: transform 0.9s ease, box-shadow 0.9s ease;
+    overflow: hidden;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 }
 
 .info-pilotos {
