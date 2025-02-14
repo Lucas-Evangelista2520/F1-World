@@ -347,9 +347,9 @@ footer section p {
   color: #FF0000;
 }
 .main-index .text-index {
-  font-size: 1.875rem;
+  font-size: 38px;
   position: absolute;
-  left: 540px;
+  left: 790px;
   top: 190px;
 }
 
@@ -476,18 +476,18 @@ footer section p {
   text-align: center;
 }
 .container-pilotos section h3 {
-  font-size: 1.375rem;
+  font-size: 30px;
   min-height: 3rem;
 }
 
 .equipo-dato {
   color: #AB0C0C;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .numero-dato {
   color: #FF0000;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .piloto {
@@ -533,7 +533,7 @@ footer section p {
   flex-grow: 1;
 }
 .info-pilotos article .dato {
-  font-size: 0.75rem;
+  font-size: 24px;
 }
 .info-pilotos article:nth-child(3) {
   grid-column: span 2;
@@ -700,6 +700,28 @@ nav ul {
 }
 
 /*5° llamamos todo lo que sea media query*/
+@media (max-width: 1025px) {
+  .main-index .text-index {
+    font-size: 1.875rem;
+    left: 540px;
+    top: 190px;
+  }
+  .container-pilotos section h3 {
+    font-size: 1.375rem;
+    min-height: 3rem;
+  }
+  .equipo-dato {
+    color: #AB0C0C;
+    font-size: 1rem;
+  }
+  .numero-dato {
+    color: #FF0000;
+    font-size: 1rem;
+  }
+  .info-pilotos article .dato {
+    font-size: 0.75rem;
+  }
+}
 @media (max-width: 768px) {
   body header .title h1 {
     font-size: 2.25rem;
