@@ -1,5 +1,16 @@
 @media(max-width: 321px) {
 
+    footer {
+        height: 1.5rem;
+        position: relative;
+        section {
+            p {
+                font-size: .5rem;
+                margin-right: .1875rem;
+            }
+        }
+    }
+
 // CALENDARIO
 
 .container-calendario .fila-carrera .datos-carrera .detalle {
@@ -28,18 +39,43 @@
 
 // EQUIPOS
 
-.stats-grid {
+/*.stats-grid {
     .stat-constructores, .stat-pilotos, .victorias-equipo {
         min-height: 80px;
         min-width: auto; 
     }
-}
+}*/
 
-body .main-equipos .equipo {
-    .piloto-1, .piloto-2 {
+.main-equipos {
+
+    .equipo .stats-grid{
+
+        .stat-constructores, .stat-pilotos, .victorias-equipo {
+            min-height: 3.5rem;
+            min-width: 12.5rem;
+        }
+
+        .numero-champ-constr,
+        .numero-champ-piloto,
+        .num-victorias,
+        .numero-piloto {
+        font-size: 1rem;
+        }
+
+        .nombre-piloto,
+        .estadistica {
+        font-size: .75rem;
+        }
+
+        .pais-piloto {
+            font-size: .625rem;
+            }
+        
+        .piloto-1, .piloto-2 {
         min-height: 80px; 
         min-width: 125px;
         }
+    }
 }
 
 

@@ -1,0 +1,13 @@
+@media (max-width: 651px) {
+
+//EQUIPOS
+
+.container-pilotos section {
+    flex: 1 1 calc(50% - 1.25rem);
+    max-width: calc(50% - 1.25rem);
+    box-sizing: border-box;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+}

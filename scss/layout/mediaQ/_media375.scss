@@ -177,6 +177,11 @@ body {
         font-size: .625rem;
         }
 
+        .stat-constructores, .stat-pilotos, .victorias-equipo {
+            min-height: 4rem;
+            min-width: 15.625rem;
+        }
+
         .numero-champ-constr,
         .numero-champ-piloto,
         .num-victorias,

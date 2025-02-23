@@ -778,6 +778,7 @@ nav ul {
   }
   .stats-grid .img-equipos {
     max-width: 40%;
+    height: auto;
     object-fit: contain;
     grid-column: span 2;
     grid-row: 1;
@@ -786,7 +787,8 @@ nav ul {
   .stats-grid .stat-pilotos,
   .stats-grid .victorias-equipo {
     grid-column: span 2;
-    width: 60%;
+    width: 50%;
+    min-height: 5rem;
     margin: 0 auto;
   }
   .stats-grid .stat-constructores.stat-constructores,
@@ -808,6 +810,35 @@ nav ul {
   .stats-grid .piloto-2 {
     grid-column: span 1;
     grid-row: 6;
+    min-height: 6.25rem;
+    min-width: 13.75rem;
+  }
+  .main-equipos .equipo h3 {
+    font-size: 1.5rem;
+  }
+  .main-equipos .equipo p {
+    font-size: 1rem;
+  }
+  .main-equipos .equipo .numero-champ-constr,
+  .main-equipos .equipo .numero-champ-piloto,
+  .main-equipos .equipo .num-victorias,
+  .main-equipos .equipo .numero-piloto {
+    font-size: 1.625rem;
+  }
+  .main-equipos .equipo .nombre-piloto, .main-equipos .equipo .estadistica {
+    font-size: 1.25rem;
+  }
+  .main-equipos .equipo .pais-piloto {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 651px) {
+  .container-pilotos section {
+    flex: 1 1 calc(50% - 1.25rem);
+    max-width: calc(50% - 1.25rem);
+    box-sizing: border-box;
+    padding: 30px 20px;
+    text-align: center;
   }
 }
 @media (max-width: 426px) {
@@ -910,29 +941,32 @@ nav ul {
     font-size: 1.125rem;
   }
   /*EQUIPOS*/
-  body .equipo h3 {
+  .main-equipos .equipo h3 {
     font-size: 1.25rem;
   }
-  body .equipo p {
+  .main-equipos .equipo p {
     font-size: 0.875rem;
   }
-  body .equipo .numero-champ-constr,
-  body .equipo .numero-champ-piloto,
-  body .equipo .num-victorias,
-  body .equipo .numero-piloto {
+  .main-equipos .equipo .numero-champ-constr,
+  .main-equipos .equipo .numero-champ-piloto,
+  .main-equipos .equipo .num-victorias,
+  .main-equipos .equipo .numero-piloto {
     font-size: 1.375rem;
   }
-  body .equipo .nombre-piloto, body .equipo .estadistica {
+  .main-equipos .equipo .nombre-piloto, .main-equipos .equipo .estadistica {
     font-size: 1rem;
   }
-  body .equipo .pais-piloto {
+  .main-equipos .equipo .pais-piloto {
     font-size: 0.875rem;
   }
   .main-equipos section {
     padding: 10px;
   }
+  .main-equipos .equipo .stat-constructores, .main-equipos .equipo .stat-pilotos, .main-equipos .equipo .victorias-equipo {
+    min-height: 4.375rem;
+  }
   .main-equipos .equipo .piloto-1, .main-equipos .equipo .piloto-2 {
-    min-height: 6.25rem;
+    min-height: 5rem;
     min-width: 10.625rem;
   }
   .main-equipos .equipo .stats-grid {
@@ -1068,6 +1102,10 @@ nav ul {
   .main-equipos .equipo p {
     font-size: 0.625rem;
   }
+  .main-equipos .equipo .stat-constructores, .main-equipos .equipo .stat-pilotos, .main-equipos .equipo .victorias-equipo {
+    min-height: 4rem;
+    min-width: 15.625rem;
+  }
   .main-equipos .equipo .numero-champ-constr,
   .main-equipos .equipo .numero-champ-piloto,
   .main-equipos .equipo .num-victorias,
@@ -1088,6 +1126,14 @@ nav ul {
   }
 }
 @media (max-width: 321px) {
+  footer {
+    height: 1.5rem;
+    position: relative;
+  }
+  footer section p {
+    font-size: 0.5rem;
+    margin-right: 0.1875rem;
+  }
   .container-calendario .fila-carrera .datos-carrera .detalle {
     margin-top: 5px;
   }
@@ -1107,11 +1153,30 @@ nav ul {
     font-size: 0.625rem;
     padding: 0.3125rem;
   }
-  .stats-grid .stat-constructores, .stats-grid .stat-pilotos, .stats-grid .victorias-equipo {
-    min-height: 80px;
-    min-width: auto;
+  /*.stats-grid {
+      .stat-constructores, .stat-pilotos, .victorias-equipo {
+          min-height: 80px;
+          min-width: auto; 
+      }
+  }*/
+  .main-equipos .equipo .stats-grid .stat-constructores, .main-equipos .equipo .stats-grid .stat-pilotos, .main-equipos .equipo .stats-grid .victorias-equipo {
+    min-height: 3.5rem;
+    min-width: 12.5rem;
   }
-  body .main-equipos .equipo .piloto-1, body .main-equipos .equipo .piloto-2 {
+  .main-equipos .equipo .stats-grid .numero-champ-constr,
+  .main-equipos .equipo .stats-grid .numero-champ-piloto,
+  .main-equipos .equipo .stats-grid .num-victorias,
+  .main-equipos .equipo .stats-grid .numero-piloto {
+    font-size: 1rem;
+  }
+  .main-equipos .equipo .stats-grid .nombre-piloto,
+  .main-equipos .equipo .stats-grid .estadistica {
+    font-size: 0.75rem;
+  }
+  .main-equipos .equipo .stats-grid .pais-piloto {
+    font-size: 0.625rem;
+  }
+  .main-equipos .equipo .stats-grid .piloto-1, .main-equipos .equipo .stats-grid .piloto-2 {
     min-height: 80px;
     min-width: 125px;
   }

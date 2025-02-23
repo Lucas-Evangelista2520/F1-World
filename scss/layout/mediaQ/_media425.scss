@@ -133,9 +133,8 @@
         /*EQUIPOS*/
 
         // Tamaño font
-body {
 
-    .equipo {
+    .main-equipos .equipo {
         h3 {
             font-size: 1.25rem; 
         }
@@ -159,7 +158,7 @@ body {
             font-size: .875rem; 
         }
     }
-}
+
 
 // Ajuste padding y tamaño de los contendores
 .main-equipos {
@@ -168,8 +167,11 @@ body {
     }
 
     .equipo {
+        .stat-constructores, .stat-pilotos, .victorias-equipo {
+            min-height: 4.375rem;
+        }
         .piloto-1, .piloto-2 {
-            min-height: 6.25rem; 
+            min-height: 5rem; 
             min-width: 10.625rem;
         }
 
