@@ -33,7 +33,7 @@
 .numero-champ-piloto,
 .num-victorias,
 .numero-piloto {
-    color: #FF0000;
+    color: map-get($colores, red);
     font-size: 2.25rem;
 }
 

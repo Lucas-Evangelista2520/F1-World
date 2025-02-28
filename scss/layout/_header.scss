@@ -1,7 +1,7 @@
 header {
     .title {
         background-color: map-get($background-colors, dark-red);
-        color: white;
+        color: map-get($colores, white);
         /*margin: 20px;*/
         padding: 20px 20px 20px 5px;
         font-size: 3.75rem;

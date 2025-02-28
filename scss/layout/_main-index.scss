@@ -18,7 +18,7 @@
             margin-top: 15px;
             border-radius: 20px;
             span {
-                color: #FF0000;
+                color:  map-get($colores, red);
             }
         }
     }

@@ -14,26 +14,26 @@
         margin-top: 15px;
         margin-bottom: 15px;
         border-radius: 10px;
-        border: 4px solid rgba(0, 0, 0, 0.9);
+        border: 4px solid map-get($colores, black-90);
 
         th {
             padding: .75rem .5rem;
             font-weight: 700;
             white-space: nowrap;
             font-size: 1.25rem;
-            color: #FF0000;
+            color: map-get($colores, red);
         }
 
         thead {
-            border-bottom: solid 1px rgba(65, 65, 65, 1);
+            border-bottom: solid 1px map-get($colores, gray65);
         }
 
         td {
             padding: .7500rem;
-            border-top: solid 1px rgba(65, 65, 65, 1);
+            border-top: solid 1px map-get($colores, gray65);
 
             &:first-child {
-                border-top: solid 1px rgba(65, 65, 65, 1);
+                border-top: solid 1px map-get($colores, gray65);
             }
 
 
